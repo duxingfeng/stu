@@ -4,7 +4,7 @@
 
 ## 文件  
 
-echo:输出内容
+> echo:输出内容
 
 ---
 
@@ -100,7 +100,9 @@ echo:输出内容
 ## Linux进阶
 
 ---
->curl  
+> 查看当前系统版本：cat /proc/version    
+> uname -a  
+> curl  
 >> get  
 >>> -G : 使用get请求  
 >>> -d : 指定请求数据  
