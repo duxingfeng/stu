@@ -12,6 +12,8 @@ class TestJDCloud(object):
         path = "/Users/feng/Documents/tools/chrome/chromedriver"
         self.driver = webdriver.Chrome(executable_path=path)
         self.driver.maximize_window()
+        # 隐式等待
+        self.driver.implicitly_wait(3)
         time.sleep(3)
 
     def teardown(self):
