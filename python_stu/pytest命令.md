@@ -36,5 +36,23 @@
 
 > 工厂模式  
 
-> 反射
+> 反射:hasattr():判断实例有没有属性或者方法
+>   getattr()：获取实例的属性或者方法
+> 
 
+> 多线程并行与分布式执行:  
+> pytest-xdist
+> 
+> 读取yaml文件：
+> pyyaml safe_load(open("yaml_fail""))
+> 
+> allure    
+> 测试数据：--alluredir=./result/(这个选项用于指定存储测试结果的路径)  
+> 查看测试报告：
+>> 一：allure serve ./result/      
+>> 二：生成报告：allure generate ./result/  --clean(注意：覆盖路径加--clean)
+>     打开报告：allure open -h 127.0.0.1 -p(启动一个端口) ./result/
+> 
+> 测试用例顺序：pytest-ordering
+> 
+> 
