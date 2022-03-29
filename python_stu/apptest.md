@@ -72,4 +72,6 @@
 > ImageView 图片控件
 > CheckBox 复选框控件，RadioButton 单选框控件
 
+### 触屏操作自动化
 
+- TouchAction
