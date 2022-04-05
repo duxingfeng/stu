@@ -30,11 +30,11 @@
 
 ### 等待
 
-> 隐式等待(全局性)：
+- 隐式等待(全局性)：
 > driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS)   
 > 在服务端等待
 >
-> 显示等待(等待某个元素):     
+- 显示等待(等待某个元素):     
 > Element = WebDriverWait(driver,10,0.5).until(expected_conditions.visibility_of_element_located((MobileBy.id,"")))  
 > 在客户端等待
 
@@ -75,3 +75,7 @@
 ### 触屏操作自动化
 
 - TouchAction
+
+### toast 控件
+
+- 获取手机上的包名：adb shell pm list package
