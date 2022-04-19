@@ -31,10 +31,13 @@
 ### 等待
 
 - 隐式等待(全局性)：
+
 > driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS)   
 > 在服务端等待
 >
-- 显示等待(等待某个元素):     
+
+- 显示等待(等待某个元素):
+
 > Element = WebDriverWait(driver,10,0.5).until(expected_conditions.visibility_of_element_located((MobileBy.id,"")))  
 > 在客户端等待
 
@@ -79,3 +82,30 @@
 ### toast 控件
 
 - 获取手机上的包名：adb shell pm list package
+- 截图：save_screenshot
+- 录屏工具：scrcpy
+- subprocess
+- shlex
+- inspect.stack()
+- func.__name__
+- repr()
+
+### monkey
+
+- adb shell monkey 100：对所有包随机操作
+- adb shell monkey -p com.app.android 100：对指定包 
+- adb shell monkey -p com.app.android -s 20 80 ：时间种子
+- adb shell monkey -p com.app.android -vv -s 20 80 ：详细日志
+- adb shell monkey -p com.app.android --throttle 5000 100：时间延迟
+- adb shell monkey -p com.app.android --pct-touch 10 1000：事件百分比
+
+- 常用事件
+--pct-touch：触摸事件，比如点击
+--pct-motion：动作事件，比如滑动
+--pct-trackball：轨迹事件，比如移动+点击，曲线滑动
+--pct-majornav：主要导航事件，比如回退按键、菜单按键
+  
+### android maxim 遍历测试工具
+### appcrawler 多平台自动遍历测试工具
+### 多设备管理平台 STF
+### selenium grid

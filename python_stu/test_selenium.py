@@ -22,3 +22,7 @@ class TestJDCloud(object):
     def test_jdcloud(self):
         self.driver.get("https://www.jdcloud.com/")
         time.sleep(5)
+
+    # inspect.stack()
+    # func.__name__
+    # repr()
