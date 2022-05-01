@@ -56,3 +56,7 @@
 - 模拟安全测试的环境：DVWA
 - 安全的机构：owasp.org
 - 安全工具：OWASP ZAP（入手）、WVS、AppScan、BurpSuite、Sqlmap
+
+### 性能测试
+
+- 插件：locust
